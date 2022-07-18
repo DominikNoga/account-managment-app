@@ -1,0 +1,24 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+{% block content %}
+<br>
+<div class="row">
+	<div class="col-md-12">
+		<div class="card card-body">
+            <h5>Customer:{{client.name}}</h5>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ formset.management_form }} <!-- this has to be added
+                  to process every form separately
+                  -->
+                {% for form in formset %}
+                    <br>
+                    {{form}}
+                {% endfor %}
+                <br>
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
