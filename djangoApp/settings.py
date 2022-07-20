@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'demo_1',
         'USER': 'domin10',
-        'PASSWORD': 'wazawa13322',
+        'PASSWORD': '********',
         'HOST': 'database-1.c8dd0ofr18t0.us-east-1.rds.amazonaws.com',
         'PORT': '5432'
     }
@@ -141,7 +141,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'dominik.noga2001@gmail.com'
-EMAIL_HOST_PASSWORD = 'kkoixgttedefrqgi'
+EMAIL_HOST_PASSWORD = '******'
 
 # S3 BUCKETS CONFIG
 
